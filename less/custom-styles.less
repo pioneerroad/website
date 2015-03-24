@@ -1,0 +1,95 @@
+body {
+    font-family:@font-family-serif;
+}
+
+.container.content {
+    margin-bottom:100px;
+    @media (max-width:@screen-sm) {
+        margin-bottom:200px;
+    }
+}
+
+.container-fluid {
+    padding:0;
+    width:100%;
+    margin:0;
+    background-color:#fff;
+}
+
+.jumbotron {
+    padding-top:@padding-large-vertical;
+    .img-responsive();
+    background-image:url('../img/bg.svg');
+    background-size:cover;
+    background-position:top;
+    background-repeat:no-repeat;
+    @media (min-width:@screen-lg) {
+        height:500px;
+    }
+    @media (max-width:@screen-sm) {
+        background-position:-200px 0;
+    }
+    .text-box { 
+        height:300px;
+        text-align:center;
+        background-image:url('../img/bg-test.svg');
+        background-size:cover;
+        background-repeat:no-repeat;
+        background-position:top;
+        padding:(@padding-large-vertical*2) (@padding-large-horizontal*2);
+    }
+    background-size:cover;
+    border-radius:0 !important;
+    height:300px;
+    color:#000;
+    .small {
+        color:#A33004;
+        font-size:@font-size-base * 2;
+    }
+}
+
+.product-benefits {
+    .container {
+        h1 {
+            text-align:center;
+            margin-bottom:40px;
+            border-bottom:1px solid #ccc;
+        }
+    }
+    .col {
+        text-align: center;
+        @media (min-width:@screen-md) {
+            margin-bottom:@padding-large-vertical * 6;
+        }
+        img {
+            max-width:50%;
+        }
+        p {
+            color:#888;
+        }
+    }
+}
+
+.footer {
+    position:fixed;
+    bottom:0;
+    #gradient > .vertical();
+    padding:0;
+    width:100%;
+    margin:0;
+    ul {
+        list-style:none;
+        margin-bottom:0;
+        padding-right:@padding-large-horizontal;
+        li {
+            color:#fff;
+            display:inline-block;
+            padding:(@padding-large-vertical * 2) 0;
+            a {
+                display:inline-block;
+                color:#fff;
+                margin-right:(@padding-large-horizontal * 3);
+            }
+        }
+    }
+}
